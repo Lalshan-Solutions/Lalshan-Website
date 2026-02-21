@@ -1,199 +1,152 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { MailOutline, PhoneOutlined, LocationOnOutlined } from "@mui/icons-material";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24 mt-20">
-        <div className="container">
-          {/* Gradient Divider */}
-          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent mb-16"></div>
+    <footer className="relative mt-20 pt-20 overflow-hidden bg-white dark:bg-[#0B1121]">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lalshan Solutions Pvt Ltd<br />
-                  21/591, Poojappura X Road, Aroor Grama Panchayat, 688534, Kerala, India<br />
-                </p>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark font-medium">
-                  <a href="tel:9847236082" className="hover:text-primary transition-colors">9847236082</a> <br />
-                  <a href="mailto:info@lalshansolutions.in" className="hover:text-primary transition-colors">info@lalshansolutions.in</a>
-                </p>
+      <div className="container relative z-10 px-6 mx-auto sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8 text-left">
 
-                <div className="flex items-center space-x-4">
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                  >
-                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12.1 10.4939V7.42705C12.1 6.23984 13.085 5.27741 14.3 5.27741H16.5V2.05296L13.5135 1.84452C10.9664 1.66676 8.8 3.63781 8.8 6.13287V10.4939H5.5V13.7183H8.8V20.1667H12.1V13.7183H15.4L16.5 10.4939H12.1Z" fill="currentColor" />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                  >
-                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M13.9831 19.25L9.82094 13.3176L4.61058 19.25H2.40625L8.843 11.9233L2.40625 2.75H8.06572L11.9884 8.34127L16.9034 2.75H19.1077L12.9697 9.73737L19.6425 19.25H13.9831ZM16.4378 17.5775H14.9538L5.56249 4.42252H7.04674L10.808 9.6899L11.4584 10.6039L16.4378 17.5775Z" fill="currentColor" />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                  >
-                    <svg width="18" height="14" viewBox="0 0 18 14" className="fill-current">
-                      <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
-                  >
-                    <svg width="17" height="16" viewBox="0 0 17 16" className="fill-current">
-                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
-                    </svg>
-                  </a>
+          {/* Brand & Contact Info */}
+          <div className="flex flex-col items-start lg:col-span-4">
+            <Link href="/" className="mb-8 inline-block drop-shadow-sm transition-transform hover:scale-105 duration-300">
+              <Image
+                src="/images/logo/logo-2.svg"
+                alt="Lalshan Solutions logo"
+                className="w-[160px] dark:hidden"
+                width={160}
+                height={40}
+              />
+              <Image
+                src="/images/logo/logo.svg"
+                alt="Lalshan Solutions logo"
+                className="hidden w-[160px] dark:block"
+                width={160}
+                height={40}
+              />
+            </Link>
+            <p className="mb-8 text-[15px] leading-relaxed text-[#64748B] dark:text-[#94A3B8] max-w-sm">
+              We empower businesses through innovative technology, delivering exceptional digital experiences and robust IT solutions globally.
+            </p>
+
+            <ul className="space-y-4 w-full">
+              <li className="flex items-start gap-4">
+                <div className="mt-1 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                  <LocationOnOutlined fontSize="small" />
                 </div>
-              </div>
-            </div>
-
-            {/* Column 2: Support & Help (Moved here) */}
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul className="space-y-4">
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Column 3: Useful Links */}
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul className="space-y-4">
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Column 4: Terms */}
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul className="space-y-4">
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      TOS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                <span className="text-[14px] text-[#475569] dark:text-[#CBD5E1] leading-relaxed">
+                  21/591, Poojappura X Road,<br />
+                  Aroor Grama Panchayat, 688534,<br />
+                  Kerala, India
+                </span>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                  <PhoneOutlined fontSize="small" />
+                </div>
+                <a href="tel:+919847236082" className="text-[14px] font-medium text-[#475569] hover:text-primary dark:text-[#CBD5E1] dark:hover:text-white transition-colors">
+                  +91 98472 36082
+                </a>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                  <MailOutline fontSize="small" />
+                </div>
+                <a href="mailto:info@lalshansolutions.in" className="text-[14px] font-medium text-[#475569] hover:text-primary dark:text-[#CBD5E1] dark:hover:text-white transition-colors">
+                  info@lalshansolutions.in
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Copyright © 2024 Lalshan Solutions Pvt Ltd
-            </p>
+          {/* Quick Links */}
+          <div className="lg:col-span-2 lg:col-start-6">
+            <h3 className="mb-6 text-[18px] font-bold text-[#1E293B] dark:text-white flex items-center gap-2 flex-row">
+              <span className="w-1.5 h-6 bg-primary rounded-full"></span>
+              Company
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="inline-flex text-[15px] font-medium text-[#64748B] hover:text-primary dark:text-[#94A3B8] dark:hover:text-white transition-all hover:translate-x-1">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="inline-flex text-[15px] font-medium text-[#64748B] hover:text-primary dark:text-[#94A3B8] dark:hover:text-white transition-all hover:translate-x-1">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="inline-flex text-[15px] font-medium text-[#64748B] hover:text-primary dark:text-[#94A3B8] dark:hover:text-white transition-all hover:translate-x-1">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services (Visual Only) */}
+          <div className="lg:col-span-3 lg:col-start-8">
+            <h3 className="mb-6 text-[18px] font-bold text-[#1E293B] dark:text-white flex items-center gap-2 flex-row">
+              <span className="w-1.5 h-6 bg-primary rounded-full"></span>
+              Our Expertise
+            </h3>
+            <ul className="space-y-3">
+              <li><span className="inline-flex text-[15px] font-medium text-[#64748B] dark:text-[#94A3B8]">Custom Web Development</span></li>
+              <li><span className="inline-flex text-[15px] font-medium text-[#64748B] dark:text-[#94A3B8]">Mobile App Solutions</span></li>
+              <li><span className="inline-flex text-[15px] font-medium text-[#64748B] dark:text-[#94A3B8]">IT & Cloud Consulting</span></li>
+              <li><span className="inline-flex text-[15px] font-medium text-[#64748B] dark:text-[#94A3B8]">IoT & Systems Integration</span></li>
+              <li><span className="inline-flex text-[15px] font-medium text-[#64748B] dark:text-[#94A3B8]">AI Data Insights</span></li>
+            </ul>
+          </div>
+
+          {/* Legal Links */}
+          <div className="lg:col-span-2 lg:col-start-11">
+            <h3 className="mb-6 text-[18px] font-bold text-[#1E293B] dark:text-white flex items-center gap-2 flex-row">
+              <span className="w-1.5 h-6 bg-primary rounded-full"></span>
+              Legal
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/terms-of-service" className="inline-flex text-[15px] font-medium text-[#64748B] hover:text-primary dark:text-[#94A3B8] dark:hover:text-white transition-all hover:translate-x-1">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" className="inline-flex text-[15px] font-medium text-[#64748B] hover:text-primary dark:text-[#94A3B8] dark:hover:text-white transition-all hover:translate-x-1">
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Social Line & Copyright */}
+        <div className="mt-16 pt-8 pb-10 border-t border-[#E2E8F0] dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-[14px] font-medium text-[#64748B] dark:text-[#94A3B8] text-center md:text-left">
+            &copy; {new Date().getFullYear()} Lalshan Solutions Pvt Ltd. All Rights Reserved.
+          </p>
+
+          <div className="flex items-center justify-center gap-4">
+            <a href="#" aria-label="Social Link" className="w-10 h-10 rounded-full bg-[#F1F5F9] dark:bg-white/5 flex items-center justify-center text-[#64748B] dark:text-[#94A3B8] hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 transform hover:-translate-y-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" /></svg>
+            </a>
+            <a href="#" aria-label="Social Link" className="w-10 h-10 rounded-full bg-[#F1F5F9] dark:bg-white/5 flex items-center justify-center text-[#64748B] dark:text-[#94A3B8] hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 transform hover:-translate-y-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+            </a>
+            <a href="#" aria-label="Social Link" className="w-10 h-10 rounded-full bg-[#F1F5F9] dark:bg-white/5 flex items-center justify-center text-[#64748B] dark:text-[#94A3B8] hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 transform hover:-translate-y-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+            </a>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 
