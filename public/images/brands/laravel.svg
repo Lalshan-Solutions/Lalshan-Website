@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laravel L shape -->
+  <path d="M10 5 L25 5 L18 20 L30 10 L22 30 L35 25 L30 35 L15 35 Z" fill="none" stroke="black" stroke-width="2"/>
+  <text x="40" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="black">Laravel</text>
+</svg>

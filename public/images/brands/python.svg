@@ -1,0 +1,6 @@
+<svg width="120" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+   <!-- Python snake approximation -->
+  <path d="M15 5 Q25 5 25 15 L25 20 Q25 25 15 25 Q5 25 5 15 L5 10" fill="none" stroke="black" stroke-width="4"/>
+  <path d="M25 35 Q15 35 15 25 L15 20 Q15 15 25 15 Q35 15 35 25 L35 30" fill="none" stroke="black" stroke-width="4"/>
+  <text x="45" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="black">Python</text>
+</svg>

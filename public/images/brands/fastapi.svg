@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lightning Bolt -->
+  <path d="M20 5 L10 20 L20 20 L15 35 L30 15 L20 15 L25 5 Z" fill="black"/>
+  <text x="40" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="black">FastAPI</text>
+</svg>

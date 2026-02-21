@@ -1,0 +1,6 @@
+<svg width="100" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 35V5L25 5L45 35H35L20 12V35H10Z" fill="black" />
+  <path d="M55 35V20H75V15H55V10H80V5H50V35H55Z" fill="black" />
+  <path d="M85 35L90 20L95 35H100L92.5 15H87.5L80 35H85Z" fill="black" />
+  <text x="60" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="black">Next.js</text>
+</svg>

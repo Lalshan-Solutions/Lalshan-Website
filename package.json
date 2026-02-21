@@ -1,0 +1,45 @@
+{
+  "name": "lalshan-website",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "node ./ensure-yarn.js",
+    "prestart": "node ./ensure-yarn.js",
+    "prebuild": "node ./ensure-yarn.js",
+    "predev": "node ./ensure-yarn.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^7.3.7",
+    "@mui/material-nextjs": "^7.3.7",
+    "axios": "^1.13.4",
+    "eslint": "^10.0.0",
+    "eslint-config-next": "^16.1.6",
+    "next": "^16.1.6",
+    "next-themes": "^0.4.6",
+    "nodemailer": "^8.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.1",
+    "react-icons": "^5.5.0",
+    "react-modal-video": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.2.1",
+    "@types/react": "^19.2.13",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}
